@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이름-Live Site</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 한국어 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/noto-sans-cjk-kr@latest/css/NotoSansCJKkr.css">
+<script>
+    // 한국어
+    var koreanFont = new FontFace('Noto Sans CJK KR', 'url(https://cdn.jsdelivr.net/npm/noto-sans-cjk-kr@latest/fonts/NotoSansCJKkr-Regular.otf)');
+    koreanFont.load().then(function(loadedFont) {
+      document.fonts.add(loadedFont);
+      document.body.style.fontFamily = "'Noto Sans CJK KR', sans-serif";
+    });
+    </script>
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+</head>
+<body>   
+    <!-- #wrap>header>.mainMenu>h1.logo+nav.menu -->
+    <div id="wrap">
+    <!-- header -->
+     <header>
+        <div class="mainMenu">
+            <h1 class="logo">
+                <a href="#"><img src="./images/logo.svg" alt="로고"></a>
+            </h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">레퍼런스</a></li>
+                    <li><a href="#">스튜디오</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">문의사항</a></li>
+                </ul>
+            </nav>
+
+
+
+
+            <!-- 토글 x -->
+            <nav class="toggle">
+                <!-- 토글 햄버거버튼 -->
+
+                <span 
+
+                onclick="openNav()">
+                <!-- &#9776; -->
+                <a href="#"><img src="./images/toggle.svg" alt="toggle"></a>
+            </span> 
+
+             <div id="myNav" class="overlay"> 
+                  <!-- x버튼 -->
+                    <a href="javascript:void(0)" class="closebtn" 
+                    onclick="closeNav()">&times;</a>
+                    
+                    <div class="overlay-content">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">레퍼런스</a></li>
+                            <li><a href="#">스튜디오</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">문의사항</a></li>
+                        </ul>
+                   </div>
+                   
+                </div>
+  
+            </nav>
+        </div>
+     </header>
+      <main>
+        <div class="centerImg">
+            <a href="#"><img src="./images/img.png" alt="메인이미지"></a>
+        </div>
+      </main>
+      <!-- a.btn>img -->
+      <footer>
+        <div class="mainBtn">
+            <a href="#" class="btn"><img src="./images/right-btn.png" alt="하단버튼"></a>
+        </div>
+      </footer>   
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* reset */
+* {margin: 0; padding: 0; }
+ul,li{margin: 0; padding: 0; list-style: none;}
+body { width: 100%; height: 100vh;
+     background: url("../images/bg.svg")no-repeat center/cover;
+     font-family: 'Noto Sans CJK KR', sans-serif;
+    }
+
+/* header */
+#wrap header {width: 95%; height: 10vh;margin: 0 auto;
+    /* border:1px solid yellow; */ 
+}
+
+#wrap header .mainMenu {width: 100%; height: 80px;
+    display: flex; justify-content: space-between;}
+
+    #wrap header .mainMenu .logo img {margin-top: 15px;}
+    #wrap header .mainMenu .menu{margin-top: 20px;}
+
+    #wrap header .mainMenu .menu ul { width: 400px;
+        display: flex; justify-content: space-between; 
+        /* border:1px solid yellow; */
+    }
+    
+ 
+    #wrap header .mainMenu .menu ul li a {color: #fff; 
+        /* padding: 15px 16px 9px; */
+         text-decoration: none; font-weight: bold;    
+    }
+    #wrap header .mainMenu .menu ul li a:hover,
+    #wrap header .mainMenu .menu ul li a:focus {opacity: 0.5;}
+    header span,.toggle {display: none;}
+    
+    /* main */
+    #wrap main {width: 100%; height: 80vh;}
+    #wrap main .centerImg {position: absolute; left: 50%; top: 50%; 
+        transform: translate(-50%,-50%);}
+    #wrap main .centerImg img{ 
+        max-width: 100%
+    }
+    
+    
+
+    #wrap footer {width: 95%;  margin: 0 auto;
+         /* border:1px solid yellow; */
+        }
+        /* 오른쪽하단버튼 */
+ #wrap footer .mainBtn {width: 100%;
+    height: 50px; 
+    position: relative; }
+ #wrap footer .mainBtn .btn {position: absolute; bottom: -10px;right: -5px;}
+    
+
+
+
+ #wrap header .mainMenu nav.toggle .overlay { width: 0;  height: 100%;  
+position: fixed;  z-index: 1;
+ top: 0;  right: 0; 
+ background-color: rgba(0,0,0, 0.9); 
+  overflow: hidden;  transition: 0.1s;}
+  #wrap header .mainMenu nav.toggle .overlay ul li a {opacity: 1;}
+  #wrap header .mainMenu nav.toggle .overlay ul li a:hover, 
+  #wrap header .mainMenu nav.toggle .overlay ul li a:focus {opacity: 0.3;}
+
+
+#wrap header .mainMenu nav.toggle .overlay a {  padding: 8px;  text-decoration: none;
+ font-size: 36px;  color: #818181;  display: block;  transition: 0.3s;}
+
+ #wrap header .mainMenu nav.toggle .overlay a:hover, .overlay a:focus {  color: #f1f1f1;}
+ #wrap header .mainMenu nav.toggle .overlay .overlay-content {  position: relative;  top: 25%;  width: 100%;  
+    text-align: center;  margin-top: 30px;}
+    
+    #wrap header .mainMenu nav.toggle .overlay .closebtn {  position: absolute;  top: 20px;
+ right: 45px;  font-size: 60px;}
+
+ /* mobile */
+@media(max-width:720px){
+   
+    #wrap header .mainMenu .menu {display: none;}
+    #wrap header .mainMenu nav.toggle span {
+        font-size:30px;         
+        display: block; color: #fff; position: absolute; top: 10px; right: 17px;}
+        #wrap header .mainMenu nav.toggle span a img:hover {opacity: 0.3;}
+    #wrap header .mainMenu nav.toggle {display:block;}
+    #wrap header .mainMenu nav.toggle .overlay a {font-size: 20px}
+    #wrap header .mainMenu nav.toggle .overlay .closebtn {  font-size: 40px;  top: 15px;  right: 35px;  }
+}

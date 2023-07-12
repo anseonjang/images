@@ -125,7 +125,7 @@ transition: 0.3s;
     text-align: center; margin-top: 30px;
 }
 #popup {
-    max-width: 90%;
+    max-width: 95%;
     position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 }
 

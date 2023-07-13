@@ -71,7 +71,7 @@ footer .mainBtn .btn {
 #popup { border-radius: 20px; display: none;
      position: absolute; right:50px; bottom: 50px;
      width: 400px; height: 425px; box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background: url("../images/popup.png")no-repeat; }
+    background: url("../images/popup.png")no-repeat center/cover; }
 #popup .close {position: absolute; top: 20px; right: 20px; 
     font-size: 30px; color: #fff;  display: block; 
     cursor: pointer; 
@@ -126,6 +126,8 @@ transition: 0.3s;
 }
 #popup {max-width: 90%;
     position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+
+   
 }
 
 
